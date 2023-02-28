@@ -13,7 +13,7 @@ check the console to see if the test passes.*/
 function sum(a, b) { //eslint-disable-line
     let s = a + b;
     return [s, 'The sum of ' + a + ' and ' + b + ' is ' + s + '.'];
-
+}
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -96,33 +96,46 @@ function sumArray(sumArr) { //eslint-disable-line
     let c = sumArr[2];
     let marryMe = sum(a, b)[0];
     let tomorrow = sum(marryMe, c)[0];
-    let sumArray = [tomorrow, a + b + c + ' was passed in as an array of numbers, and ' + tomorrow + ' is their sum.'];
-    return [sumArray];
+    // let newArr = [tomorrow, a + b + c + ' was passed in as an array of numbers, and' + tomorrow + ' is their sum.'];
+    let newArr = [tomorrow, `${a},${b},${c} was passed in as an array of numbers, and ${tomorrow} is their sum.`]
+    return newArr;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work
+// on the next question!
 
 /////////////////////////////////////
 /* Problem 5
-Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, 
+and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The numbers 2,3,4 have a product of 24."
 
-IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
+IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. 
+You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue 
+to use the + operator for string concatenation.
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see 
+if the test passes.*/
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    let a = testArray[0];
+    let b = testArray[1];
+    let c = testArray[2];
+    let letsBeFriends = multiply(a, b)[0];
+    let today = multiply(letsBeFriends, c)[0];
+    let results = [today, `The numbers ${a},${b},${c} have a product of ${today}.`];
+    return results;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
