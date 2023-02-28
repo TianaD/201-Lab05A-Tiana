@@ -13,10 +13,6 @@ check the console to see if the test passes.*/
 function sum(a, b) { //eslint-disable-line
     let s = a + b;
     return [s, 'The sum of ' + a + ' and ' + b + ' is ' + s + '.'];
-    //The sum of ${a} and ${b} is ${s}`
-        //sum
-        //concatenated string - "The sum of 4 and 7 is 11."
-}
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -36,7 +32,8 @@ if the test passes.*/
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+    let m = a * b;
+    return[m, 'The product of ' + a + ' and ' + b + ' is ' + m + '.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
