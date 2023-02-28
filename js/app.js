@@ -9,7 +9,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+    let s = a + b;
+    return [s, 'The sum of ' + a + ' and ' + b + ' is ' + s + '.'];
+    //The sum of ${a} and ${b} is ${s}`
+        //sum
+        //concatenated string - "The sum of 4 and 7 is 11."
 }
 
 // Here is the test for sum(); uncomment it to run it
